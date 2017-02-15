@@ -32,30 +32,33 @@ repositories {
 ```
 
 ### (四)配置商城入口url
-1. **获取店铺主页**。登陆微猫后台————>店铺————>预览。预览后，点击右侧蓝色“复制链接按钮”，存下来。如下图
+- **获取店铺主页**。登陆微猫后台————>店铺————>预览。预览后，点击右侧蓝色“复制链接按钮”，存下来。如下图
 ![wemart_sdk2](/static/wemart_sdk1.png)
 ![wemart_sdk3](/static/wemart_sdk3.png)
 
 获取到店铺主页链接: http://www.wemart.cn/mobile/?chanId=110&shelfNo=xxx&sellerId=xxx&a=shelf&m=index
 
-2. **获取店铺App Id**。点击左上方“店铺设置”或者“平台设置”————>点击左侧“场景“————>点击蓝色按钮“创建APP“并输入APP名字，保存，保存成功后，即可看到APPID
+-. **获取店铺App Id**。点击左上方“店铺设置”或者“平台设置”————>点击左侧“场景“————>点击蓝色按钮“创建APP“并输入APP名字，保存，保存成功后，即可看到APPID
 ![wemart_sdk4](/static/wemart_sdk4.png)
 ![wemart_sdk5](/static/wemart_sdk5.png)
 ![wemart_sdk6](/static/wemart_sdk6.png)
 
-3. **添加url参数**。在主页链接后面，添加必需的url参数：scenType=1&appId=xxx&userId=xxx&sign=xxx&native=false&payNative=true。
+- **添加url参数**。在主页链接后面，添加必需的url参数：scenType=1&appId=xxx&userId=xxx&sign=xxx&native=false&payNative=true。
 其中，userId为应用对应用户的唯一标识；sign参数为对字符串“appId = xxx&userId=xxx”进行RSA-SHA1签名，签名需要的私钥（即AppSecret）在AppId下方，获取方法参考上方**获取店铺App Id**步骤。
 **完整的商城入口url为：http://www.wemart.cn/mobile/?chanId=&shelfNo=xxx&sellerId=xxx&a=shelf&m=index&native=false&payNative=true&scenType=1&appId=xxx&userId=xxx&sign=xxx**
+
 **注意：上方“xxx”需用相应的值替换**
 
 ### (五)注册接收**微信支付和分享的广播**
-1. **微信支付参数获取**。创建一个继承BroadcastReceiver的子类，且在AndroidManifest.xml注册该广播，action为:”cn.wemart.sdk.share”。
+- **微信支付参数获取**。创建一个继承BroadcastReceiver的子类，且在AndroidManifest.xml注册该广播，action为:”cn.wemart.sdk.share”。
 ![wemart_sdk7](/static/wemart_sdk9.png)
+
 获取微信支付参数的示例代码如下：
 ![wemart_sdk8](/static/wemart_sdk8.png)
 
-2. **分享**。 创建一个继承BroadcastReceiver的子类，且在AndroidManifest.xml注册该广播，action为:”cn.wemart.sdk.share”。
+- **分享**。 创建一个继承BroadcastReceiver的子类，且在AndroidManifest.xml注册该广播，action为:”cn.wemart.sdk.share”。
 ![wemart_sdk9](/static/wemart_sdk10.png)
+
 获取分享参数的示例代码如下：
 ![wemart_sdk10](/static/wemart_sdk11.png)
 
