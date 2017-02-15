@@ -1,7 +1,7 @@
 ---
 title: wemartSDK 集成文档
 date: 2017-02-11 16:18:43
-category: Android 进阶
+author: james/timmy
 ---
 
 ### (一)导入wemartSDK aar和alipaySDK.jar(支付宝SDK)文件
