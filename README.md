@@ -38,7 +38,7 @@ repositories {
 
 获取到店铺主页链接: http://www.wemart.cn/mobile/?chanId=110&shelfNo=xxx&sellerId=xxx&a=shelf&m=index
 
--. **获取店铺App Id**。点击左上方“店铺设置”或者“平台设置”————>点击左侧“场景“————>点击蓝色按钮“创建APP“并输入APP名字，保存，保存成功后，即可看到APPID
+- **获取店铺App Id**。点击左上方“店铺设置”或者“平台设置”————>点击左侧“场景“————>点击蓝色按钮“创建APP“并输入APP名字，保存，保存成功后，即可看到APPID
 ![wemart_sdk4](/static/wemart_sdk4.png)
 ![wemart_sdk5](/static/wemart_sdk5.png)
 ![wemart_sdk6](/static/wemart_sdk6.png)
