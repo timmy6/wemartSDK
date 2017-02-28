@@ -1,7 +1,7 @@
 ---
 title: wemartSDK 集成文档
 date: 2017-02-11 16:18:43
-author: james/timmy
+author: james/hera/timmy
 ---
 
 > android 和iOS获取参数方法相同.
@@ -20,7 +20,7 @@ author: james/timmy
 
 - **添加url参数**。在主页链接后面，添加必需的url参数：scenType=1&appId=xxx&userId=xxx&sign=xxx&native=false&payNative=true。
 其中，userId为应用对应用户的唯一标识；sign参数为对字符串“appId = xxx&userId=xxx”进行RSA-SHA1签名，签名需要的私钥（即AppSecret）在AppId下方，获取方法参考上方**获取店铺App Id**步骤。
-**完整的商城入口url为：http://www.wemart.cn/mobile/?chanId=&shelfNo=xxx&sellerId=xxx&a=shelf&m=index&native=false&payNative=true&scenType=1&appId=xxx&userId=xxx&sign=xxx**
+**完整的商城入口url为：http://www.wemart.cn/mobile/?chanId=110&shelfNo=xxx&sellerId=xxx&a=shelf&m=index&native=false&payNative=true&scenType=1&appId=xxx&userId=xxx&sign=xxx**
 
 **注意：上方“xxx”需用相应的值替换**
 
