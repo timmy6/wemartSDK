@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C00E82EA1D38EB3D00F2103A /* WemartSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00E82E81D38EB3D00F2103A /* WemartSDK.framework */; };
+		C00E83641D38ECC100F2103A /* AlixPaylib_arc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3696B0C1D376A4F007AB630 /* AlixPaylib_arc.a */; };
+		C00E83651D38ECC300F2103A /* AlixPaylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3696B0D1D376A4F007AB630 /* AlixPaylib.a */; };
+		C00E83661D38ECC500F2103A /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3696B091D3763D9007AB630 /* libcrypto.a */; };
+		C00E83671D38ECC900F2103A /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3696B0E1D376A4F007AB630 /* libssl.a */; };
+		C351AC491D3C7251003AFA31 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C351AC481D3C7251003AFA31 /* AlipaySDK.framework */; };
+		C360D6461D2B5B2000B00AD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C360D6451D2B5B2000B00AD5 /* main.m */; };
+		C360D6491D2B5B2000B00AD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C360D6481D2B5B2000B00AD5 /* AppDelegate.m */; };
+		C360D64C1D2B5B2000B00AD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C360D64B1D2B5B2000B00AD5 /* ViewController.m */; };
+		C360D64F1D2B5B2000B00AD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C360D64D1D2B5B2000B00AD5 /* Main.storyboard */; };
+		C360D6511D2B5B2000B00AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C360D6501D2B5B2000B00AD5 /* Assets.xcassets */; };
+		C360D6541D2B5B2000B00AD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C360D6521D2B5B2000B00AD5 /* LaunchScreen.storyboard */; };
+		C360D65F1D2B5B2000B00AD5 /* WemartDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C360D65E1D2B5B2000B00AD5 /* WemartDemoTests.m */; };
+		C360D66A1D2B5B2100B00AD5 /* WemartDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C360D6691D2B5B2100B00AD5 /* WemartDemoUITests.m */; };
+		C38146431D33A0FE00215834 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38146421D33A0FE00215834 /* SystemConfiguration.framework */; };
+		C38146451D33A11300215834 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C38146441D33A11300215834 /* libsqlite3.tbd */; };
+		C381464D1D33A29400215834 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C381464C1D33A29400215834 /* CoreTelephony.framework */; };
+		C381464F1D33A2D700215834 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C381464E1D33A2D700215834 /* CoreText.framework */; };
+		C38146531D33A2FD00215834 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C38146521D33A2FD00215834 /* libc++.tbd */; };
+		C38146551D33A30800215834 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C38146541D33A30800215834 /* libz.tbd */; };
+		C381465D1D33A4B400215834 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38146571D33A32A00215834 /* CoreMotion.framework */; };
+		C38160E31E555A1D009E4886 /* Wemart.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C38160E21E555A1D009E4886 /* Wemart.bundle */; };
+		C38C56F51E65494B00F6DA91 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C381464A1D33A14300215834 /* Security.framework */; };
+		C38C56F61E65495E00F6DA91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38146591D33A35100215834 /* Foundation.framework */; };
+		C38C56F71E65496700F6DA91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38146481D33A13400215834 /* UIKit.framework */; };
+		C38C56F81E65496E00F6DA91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38146501D33A2E400215834 /* CoreGraphics.framework */; };
+		C38C56F91E654A2C00F6DA91 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38146461D33A12200215834 /* CFNetwork.framework */; };
+		C3D9F5441DBE2F970014A4A2 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D9F5431DBE2F970014A4A2 /* libWeChatSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C360D65B1D2B5B2000B00AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C360D6391D2B5B2000B00AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C360D6401D2B5B2000B00AD5;
+			remoteInfo = WemartDemo;
+		};
+		C360D6661D2B5B2100B00AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C360D6391D2B5B2000B00AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C360D6401D2B5B2000B00AD5;
+			remoteInfo = WemartDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C00E82431D3894C300F2103A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C00E82E81D38EB3D00F2103A /* WemartSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WemartSDK.framework; sourceTree = "<group>"; };
+		C351AC481D3C7251003AFA31 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		C360D6411D2B5B2000B00AD5 /* WemartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WemartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C360D6451D2B5B2000B00AD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C360D6471D2B5B2000B00AD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C360D6481D2B5B2000B00AD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C360D64A1D2B5B2000B00AD5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C360D64B1D2B5B2000B00AD5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C360D64E1D2B5B2000B00AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C360D6501D2B5B2000B00AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C360D6531D2B5B2000B00AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C360D6551D2B5B2000B00AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C360D65A1D2B5B2000B00AD5 /* WemartDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WemartDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C360D65E1D2B5B2000B00AD5 /* WemartDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WemartDemoTests.m; sourceTree = "<group>"; };
+		C360D6601D2B5B2000B00AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C360D6651D2B5B2100B00AD5 /* WemartDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WemartDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C360D6691D2B5B2100B00AD5 /* WemartDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WemartDemoUITests.m; sourceTree = "<group>"; };
+		C360D66B1D2B5B2100B00AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3696B091D3763D9007AB630 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		C3696B0C1D376A4F007AB630 /* AlixPaylib_arc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AlixPaylib_arc.a; sourceTree = "<group>"; };
+		C3696B0D1D376A4F007AB630 /* AlixPaylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AlixPaylib.a; sourceTree = "<group>"; };
+		C3696B0E1D376A4F007AB630 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		C38146421D33A0FE00215834 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C38146441D33A11300215834 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C38146461D33A12200215834 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C38146481D33A13400215834 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C381464A1D33A14300215834 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C381464C1D33A29400215834 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C381464E1D33A2D700215834 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C38146501D33A2E400215834 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C38146521D33A2FD00215834 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C38146541D33A30800215834 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C38146571D33A32A00215834 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C38146591D33A35100215834 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C38160E21E555A1D009E4886 /* Wemart.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Wemart.bundle; sourceTree = "<group>"; };
+		C3D9F5431DBE2F970014A4A2 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C360D63E1D2B5B2000B00AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C38146451D33A11300215834 /* libsqlite3.tbd in Frameworks */,
+				C38C56F51E65494B00F6DA91 /* Security.framework in Frameworks */,
+				C38146531D33A2FD00215834 /* libc++.tbd in Frameworks */,
+				C38146551D33A30800215834 /* libz.tbd in Frameworks */,
+				C3D9F5441DBE2F970014A4A2 /* libWeChatSDK.a in Frameworks */,
+				C38C56F61E65495E00F6DA91 /* Foundation.framework in Frameworks */,
+				C38C56F71E65496700F6DA91 /* UIKit.framework in Frameworks */,
+				C38C56F81E65496E00F6DA91 /* CoreGraphics.framework in Frameworks */,
+				C381464F1D33A2D700215834 /* CoreText.framework in Frameworks */,
+				C381464D1D33A29400215834 /* CoreTelephony.framework in Frameworks */,
+				C38146431D33A0FE00215834 /* SystemConfiguration.framework in Frameworks */,
+				C38C56F91E654A2C00F6DA91 /* CFNetwork.framework in Frameworks */,
+				C00E83641D38ECC100F2103A /* AlixPaylib_arc.a in Frameworks */,
+				C381465D1D33A4B400215834 /* CoreMotion.framework in Frameworks */,
+				C00E83651D38ECC300F2103A /* AlixPaylib.a in Frameworks */,
+				C351AC491D3C7251003AFA31 /* AlipaySDK.framework in Frameworks */,
+				C00E83661D38ECC500F2103A /* libcrypto.a in Frameworks */,
+				C00E83671D38ECC900F2103A /* libssl.a in Frameworks */,
+				C00E82EA1D38EB3D00F2103A /* WemartSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C360D6571D2B5B2000B00AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C360D6621D2B5B2100B00AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C360D6381D2B5B2000B00AD5 = {
+			isa = PBXGroup;
+			children = (
+				C351AC481D3C7251003AFA31 /* AlipaySDK.framework */,
+				C38146591D33A35100215834 /* Foundation.framework */,
+				C38146571D33A32A00215834 /* CoreMotion.framework */,
+				C38146541D33A30800215834 /* libz.tbd */,
+				C38146521D33A2FD00215834 /* libc++.tbd */,
+				C38146501D33A2E400215834 /* CoreGraphics.framework */,
+				C381464E1D33A2D700215834 /* CoreText.framework */,
+				C381464C1D33A29400215834 /* CoreTelephony.framework */,
+				C381464A1D33A14300215834 /* Security.framework */,
+				C38146481D33A13400215834 /* UIKit.framework */,
+				C38146461D33A12200215834 /* CFNetwork.framework */,
+				C38146441D33A11300215834 /* libsqlite3.tbd */,
+				C3696B091D3763D9007AB630 /* libcrypto.a */,
+				C3696B0C1D376A4F007AB630 /* AlixPaylib_arc.a */,
+				C3696B0D1D376A4F007AB630 /* AlixPaylib.a */,
+				C3696B0E1D376A4F007AB630 /* libssl.a */,
+				C3D9F5431DBE2F970014A4A2 /* libWeChatSDK.a */,
+				C38146421D33A0FE00215834 /* SystemConfiguration.framework */,
+				C360D6431D2B5B2000B00AD5 /* WemartDemo */,
+				C360D65D1D2B5B2000B00AD5 /* WemartDemoTests */,
+				C360D6681D2B5B2100B00AD5 /* WemartDemoUITests */,
+				C360D6421D2B5B2000B00AD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C360D6421D2B5B2000B00AD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C360D6411D2B5B2000B00AD5 /* WemartDemo.app */,
+				C360D65A1D2B5B2000B00AD5 /* WemartDemoTests.xctest */,
+				C360D6651D2B5B2100B00AD5 /* WemartDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C360D6431D2B5B2000B00AD5 /* WemartDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C38160E21E555A1D009E4886 /* Wemart.bundle */,
+				C360D6471D2B5B2000B00AD5 /* AppDelegate.h */,
+				C360D6481D2B5B2000B00AD5 /* AppDelegate.m */,
+				C360D64A1D2B5B2000B00AD5 /* ViewController.h */,
+				C360D64B1D2B5B2000B00AD5 /* ViewController.m */,
+				C360D64D1D2B5B2000B00AD5 /* Main.storyboard */,
+				C00E82E81D38EB3D00F2103A /* WemartSDK.framework */,
+				C360D6501D2B5B2000B00AD5 /* Assets.xcassets */,
+				C360D6521D2B5B2000B00AD5 /* LaunchScreen.storyboard */,
+				C360D6551D2B5B2000B00AD5 /* Info.plist */,
+				C360D6441D2B5B2000B00AD5 /* Supporting Files */,
+			);
+			path = WemartDemo;
+			sourceTree = "<group>";
+		};
+		C360D6441D2B5B2000B00AD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C360D6451D2B5B2000B00AD5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C360D65D1D2B5B2000B00AD5 /* WemartDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C360D65E1D2B5B2000B00AD5 /* WemartDemoTests.m */,
+				C360D6601D2B5B2000B00AD5 /* Info.plist */,
+			);
+			path = WemartDemoTests;
+			sourceTree = "<group>";
+		};
+		C360D6681D2B5B2100B00AD5 /* WemartDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C360D6691D2B5B2100B00AD5 /* WemartDemoUITests.m */,
+				C360D66B1D2B5B2100B00AD5 /* Info.plist */,
+			);
+			path = WemartDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C360D6401D2B5B2000B00AD5 /* WemartDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C360D66E1D2B5B2100B00AD5 /* Build configuration list for PBXNativeTarget "WemartDemo" */;
+			buildPhases = (
+				C360D63D1D2B5B2000B00AD5 /* Sources */,
+				C360D63E1D2B5B2000B00AD5 /* Frameworks */,
+				C360D63F1D2B5B2000B00AD5 /* Resources */,
+				C00E82431D3894C300F2103A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WemartDemo;
+			productName = WemartDemo;
+			productReference = C360D6411D2B5B2000B00AD5 /* WemartDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C360D6591D2B5B2000B00AD5 /* WemartDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C360D6711D2B5B2100B00AD5 /* Build configuration list for PBXNativeTarget "WemartDemoTests" */;
+			buildPhases = (
+				C360D6561D2B5B2000B00AD5 /* Sources */,
+				C360D6571D2B5B2000B00AD5 /* Frameworks */,
+				C360D6581D2B5B2000B00AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C360D65C1D2B5B2000B00AD5 /* PBXTargetDependency */,
+			);
+			name = WemartDemoTests;
+			productName = WemartDemoTests;
+			productReference = C360D65A1D2B5B2000B00AD5 /* WemartDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C360D6641D2B5B2100B00AD5 /* WemartDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C360D6741D2B5B2100B00AD5 /* Build configuration list for PBXNativeTarget "WemartDemoUITests" */;
+			buildPhases = (
+				C360D6611D2B5B2100B00AD5 /* Sources */,
+				C360D6621D2B5B2100B00AD5 /* Frameworks */,
+				C360D6631D2B5B2100B00AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C360D6671D2B5B2100B00AD5 /* PBXTargetDependency */,
+			);
+			name = WemartDemoUITests;
+			productName = WemartDemoUITests;
+			productReference = C360D6651D2B5B2100B00AD5 /* WemartDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C360D6391D2B5B2000B00AD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "冯文秀";
+				TargetAttributes = {
+					C360D6401D2B5B2000B00AD5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CPLXSZ9AY2;
+					};
+					C360D6591D2B5B2000B00AD5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C360D6401D2B5B2000B00AD5;
+					};
+					C360D6641D2B5B2100B00AD5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C360D6401D2B5B2000B00AD5;
+					};
+				};
+			};
+			buildConfigurationList = C360D63C1D2B5B2000B00AD5 /* Build configuration list for PBXProject "WemartDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C360D6381D2B5B2000B00AD5;
+			productRefGroup = C360D6421D2B5B2000B00AD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C360D6401D2B5B2000B00AD5 /* WemartDemo */,
+				C360D6591D2B5B2000B00AD5 /* WemartDemoTests */,
+				C360D6641D2B5B2100B00AD5 /* WemartDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C360D63F1D2B5B2000B00AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C360D6541D2B5B2000B00AD5 /* LaunchScreen.storyboard in Resources */,
+				C38160E31E555A1D009E4886 /* Wemart.bundle in Resources */,
+				C360D6511D2B5B2000B00AD5 /* Assets.xcassets in Resources */,
+				C360D64F1D2B5B2000B00AD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C360D6581D2B5B2000B00AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C360D6631D2B5B2100B00AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C360D63D1D2B5B2000B00AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C360D64C1D2B5B2000B00AD5 /* ViewController.m in Sources */,
+				C360D6491D2B5B2000B00AD5 /* AppDelegate.m in Sources */,
+				C360D6461D2B5B2000B00AD5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C360D6561D2B5B2000B00AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C360D65F1D2B5B2000B00AD5 /* WemartDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C360D6611D2B5B2100B00AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C360D66A1D2B5B2100B00AD5 /* WemartDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C360D65C1D2B5B2000B00AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C360D6401D2B5B2000B00AD5 /* WemartDemo */;
+			targetProxy = C360D65B1D2B5B2000B00AD5 /* PBXContainerItemProxy */;
+		};
+		C360D6671D2B5B2100B00AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C360D6401D2B5B2000B00AD5 /* WemartDemo */;
+			targetProxy = C360D6661D2B5B2100B00AD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C360D64D1D2B5B2000B00AD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C360D64E1D2B5B2000B00AD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C360D6521D2B5B2000B00AD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C360D6531D2B5B2000B00AD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C360D66C1D2B5B2100B00AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/WemartDemo/WemartSDK";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = WemartDemo/WemartSDK;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = WemartDemo/WemartSDK;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C360D66D1D2B5B2100B00AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/WemartDemo/WemartSDK";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = WemartDemo/WemartSDK;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = WemartDemo/WemartSDK;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C360D66F1D2B5B2100B00AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WemartDemo",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/WemartDemo";
+				INFOPLIST_FILE = WemartDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					WemartDemo/WemartSDK,
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.Hera-show.WemartDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		C360D6701D2B5B2100B00AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WemartDemo",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/WemartDemo";
+				INFOPLIST_FILE = WemartDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					WemartDemo/WemartSDK,
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.Hera-show.WemartDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		C360D6721D2B5B2100B00AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WemartDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.Hera-show.WemartDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WemartDemo.app/WemartDemo";
+			};
+			name = Debug;
+		};
+		C360D6731D2B5B2100B00AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WemartDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.Hera-show.WemartDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WemartDemo.app/WemartDemo";
+			};
+			name = Release;
+		};
+		C360D6751D2B5B2100B00AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WemartDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.Hera-show.WemartDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WemartDemo;
+			};
+			name = Debug;
+		};
+		C360D6761D2B5B2100B00AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WemartDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.Hera-show.WemartDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WemartDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C360D63C1D2B5B2000B00AD5 /* Build configuration list for PBXProject "WemartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C360D66C1D2B5B2100B00AD5 /* Debug */,
+				C360D66D1D2B5B2100B00AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C360D66E1D2B5B2100B00AD5 /* Build configuration list for PBXNativeTarget "WemartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C360D66F1D2B5B2100B00AD5 /* Debug */,
+				C360D6701D2B5B2100B00AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C360D6711D2B5B2100B00AD5 /* Build configuration list for PBXNativeTarget "WemartDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C360D6721D2B5B2100B00AD5 /* Debug */,
+				C360D6731D2B5B2100B00AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C360D6741D2B5B2100B00AD5 /* Build configuration list for PBXNativeTarget "WemartDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C360D6751D2B5B2100B00AD5 /* Debug */,
+				C360D6761D2B5B2100B00AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C360D6391D2B5B2000B00AD5 /* Project object */;
+}
