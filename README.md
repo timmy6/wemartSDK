@@ -27,8 +27,7 @@ author: james/hera/timmy
 ## wemart Android SDK 集成
 
 ### (1)导入wemartSDK aar和alipaySDK.jar(支付宝SDK)文件
-在library/androidSDK中找到wemartSDK.aar文件，将wemartSDK加入项目中的lib文件夹；下载alipaySDK.jar(支付宝SDK)或者在library/androidSDK里拷贝alipaySDK.jar.
-**注意:如果APP项目已经包含了支付宝SDK，请确认支付宝SDK文件名是否是alipaySDK.jar，如果不是，请将文件名修改成alipaySDK.jar，否则调起支付宝支付时，会报找不到alipaySDK文件的错误**
+在library/androidSDK中找到wemartSDK.aar文件，将wemartSDK加入项目中的lib文件夹；在[支付宝官网](https://doc.open.alipay.com/doc2/detail.htm?treeId=54&articleId=104509&docType=1)下载支付宝SDK或者在library/androidSDK里拷贝alipaySDK.jar.
 ### (2)Android Studio导入wemart.aar文件配置
 在app的build.gradle文件中，添加：
 ```java
