@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C00E82EA1D38EB3D00F2103A /* WemartSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00E82E81D38EB3D00F2103A /* WemartSDK.framework */; };
+		A592C59A1EC15D1A0087BB2A /* WemartSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CB051A1EBC65810077EF7D /* WemartSDK.framework */; };
 		C00E83641D38ECC100F2103A /* AlixPaylib_arc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3696B0C1D376A4F007AB630 /* AlixPaylib_arc.a */; };
 		C00E83651D38ECC300F2103A /* AlixPaylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3696B0D1D376A4F007AB630 /* AlixPaylib.a */; };
 		C00E83661D38ECC500F2103A /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3696B091D3763D9007AB630 /* libcrypto.a */; };
@@ -68,7 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C00E82E81D38EB3D00F2103A /* WemartSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WemartSDK.framework; sourceTree = "<group>"; };
+		A5CB051A1EBC65810077EF7D /* WemartSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WemartSDK.framework; path = WemartDemo/WemartSDK.framework; sourceTree = "<group>"; };
 		C351AC481D3C7251003AFA31 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		C360D6411D2B5B2000B00AD5 /* WemartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WemartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C360D6451D2B5B2000B00AD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A592C59A1EC15D1A0087BB2A /* WemartSDK.framework in Frameworks */,
 				C38146451D33A11300215834 /* libsqlite3.tbd in Frameworks */,
 				C38C56F51E65494B00F6DA91 /* Security.framework in Frameworks */,
 				C38146531D33A2FD00215834 /* libc++.tbd in Frameworks */,
@@ -129,7 +130,6 @@
 				C351AC491D3C7251003AFA31 /* AlipaySDK.framework in Frameworks */,
 				C00E83661D38ECC500F2103A /* libcrypto.a in Frameworks */,
 				C00E83671D38ECC900F2103A /* libssl.a in Frameworks */,
-				C00E82EA1D38EB3D00F2103A /* WemartSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +150,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5CB05191EBC65810077EF7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5CB051A1EBC65810077EF7D /* WemartSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C360D6381D2B5B2000B00AD5 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +183,7 @@
 				C360D65D1D2B5B2000B00AD5 /* WemartDemoTests */,
 				C360D6681D2B5B2100B00AD5 /* WemartDemoUITests */,
 				C360D6421D2B5B2000B00AD5 /* Products */,
+				A5CB05191EBC65810077EF7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,7 +206,6 @@
 				C360D64A1D2B5B2000B00AD5 /* ViewController.h */,
 				C360D64B1D2B5B2000B00AD5 /* ViewController.m */,
 				C360D64D1D2B5B2000B00AD5 /* Main.storyboard */,
-				C00E82E81D38EB3D00F2103A /* WemartSDK.framework */,
 				C360D6501D2B5B2000B00AD5 /* Assets.xcassets */,
 				C360D6521D2B5B2000B00AD5 /* LaunchScreen.storyboard */,
 				C360D6551D2B5B2000B00AD5 /* Info.plist */,
@@ -300,7 +308,7 @@
 				TargetAttributes = {
 					C360D6401D2B5B2000B00AD5 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = CPLXSZ9AY2;
+						DevelopmentTeam = KM8P4LJY72;
 					};
 					C360D6591D2B5B2000B00AD5 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -519,6 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KM8P4LJY72;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,6 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KM8P4LJY72;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

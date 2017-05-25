@@ -18,3 +18,5 @@ FOUNDATION_EXPORT const unsigned char WemartSDKVersionString[];
 
 #import <WemartSDK/WemartViewController.h>
 #import <WemartSDK/WMCustomNavController.h>
+
+#define KWemartShareNotice @"wemartShareInfo"

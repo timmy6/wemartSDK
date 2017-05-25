@@ -2,17 +2,22 @@
 //  AppDelegate.m
 //  WemartDemo
 //
-//  Created by 冯文秀 on 16/7/5.
-//  Copyright © 2016年 冯文秀. All rights reserved.
+//  Created by liuqiming on 17/5/5.
+//  Copyright © 2016年 liuqiming. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <WemartSDK/WemartSDK.h>
 
 // 引入支付宝SDK  实现支付宝支付回调
 #import <AlipaySDK/AlipaySDK.h>
 
+#import <WemartSDK/WemartSDK.h>
+#define WemartTestUrl  @"http://www.wemart.cn/mobile/?chanId=&shelfNo=1634&native=false&payNative=true&sellerId=97&a=shelf&m=index&scenType=1&appId=16&userId=jamesapp-test01&sign=hqvQYdb4ge+FhYgGn5L5iVz9d7nnpS0uk6O43ULLsOiG3FHh6S9uHtHu0MJkwyJCjIcLeS3xGKcAeIKev72a+U45Q1yz1982cElpRQuGIUkD5rSm5H69jY1xcBzzLTPcPSHt4wzx14FBuKIqcrhfGM14EhU51fLFP8pzPQAxp9E=&payNative=true&native=false"
 @interface AppDelegate ()
+
+@property(nonatomic, strong) WemartViewController *mWemartVc;
 
 @end
 
@@ -24,21 +29,30 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ViewController *Vc = [[ViewController alloc]init];
-    // 支付宝白名单标识 依据个人设置
-    Vc.appScheme = @"WemartSDK";
-    // 自收，则传从微信申请获得的微信AppId； 平台代收，不用传值；
-//    Vc.wechatAppId = @"wx1abc23d4ef5678a90"; // (此处AppId不可用，仅为示例, 自收替换成您的微信AppId)
-
+    ViewController *vc = [[ViewController alloc]init];
     
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:Vc];
-    nav.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
+    //-----WemartSDK设置-----
+    WemartViewController *wemartVc = [[WemartViewController alloc] init];
+    wemartVc.appScheme = @"scheme"; //支付宝白名单scheme设置
+    wemartVc.wechatAppId = @"xxxxxxxx";    //如果收款方式是平台代收，不需要配置；如果是自己收款，填写微信开发者平台对应的AppId
+    //    wemartVc.hidStatus = YES; 若App工程有全局隐藏导航栏的需求，设置hidStatus为YES, 默认为NO
+    wemartVc.shopUrl = WemartTestUrl;   // 替换成自己店铺的url 测试demo
+    //    wemartVc.WMHidden = YES;  主页面是否显示返回按钮，YES隐藏 NO显示; 不传则默认为NO，即不隐藏
+    vc.wemartVc = wemartVc;
+    self.mWemartVc = wemartVc;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(wemartShare:) name:KWemartShareNotice object:nil]; //设置SDK右上角按钮通知接收回调
+    //-----WemartSDK设置end---
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    
     // 设置根视图控制器
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
-
-
     return YES;
+}
+
+- (void) wemartShare:(NSNotification *) notification{
+    
 }
 
 // 支付宝原生支付处理，代码如下（直接复制使用，协助完成支付宝原生支付回调）

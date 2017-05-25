@@ -2,8 +2,8 @@
 //  ViewController.m
 //  WemartDemo
 //
-//  Created by 冯文秀 on 16/7/5.
-//  Copyright © 2016年 冯文秀. All rights reserved.
+//  Created by liuqiming on 17/5/5.
+//  Copyright © 2016年 liuqiming. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -17,6 +17,11 @@
 @end
 
 @implementation ViewController
+
+- (void)dealloc {
+    NSLog(@"viewController dealloc");
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:NO animated:NO];
@@ -34,21 +39,13 @@
     [button setTitle:@"跳转" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(enterAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
-
 }
 
 - (void)enterAction
 {
-    WemartViewController *wemartVc = [[WemartViewController alloc]init];
-    wemartVc.appScheme = self.appScheme;
-    wemartVc.wechatAppId = self.wechatAppId;
-    // 若App工程有全局隐藏导航栏的需求，设置hidStatus为YES, 默认为NO
-//    wemartVc.hidStatus = YES;
-    // 建议替换成自己店铺的url 测试demo
-    wemartVc.shopUrl = WemartTestUrl;
-    // 主页面是否显示返回按钮，YES隐藏 NO显示; 不传则默认为NO，即不隐藏
-//    wemartVc.WMHidden = YES;
-    [self.navigationController pushViewController:wemartVc animated:YES];
+    if (self.wemartVc) {
+        [self.navigationController pushViewController:self.wemartVc animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

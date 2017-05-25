@@ -2,8 +2,8 @@
 //  WemartDemoUITests.m
 //  WemartDemoUITests
 //
-//  Created by 冯文秀 on 16/7/5.
-//  Copyright © 2016年 冯文秀. All rights reserved.
+//  Created by liuqiming on 17/5/5.
+//  Copyright © 2016年 liuqiming. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

@@ -108,13 +108,17 @@ startActivity(intent);
 
 ![wemart_ios_sdk5](/static/wemart_ios_sdk5.png)
 
-### (5)赋值商城店铺url入口
+### (6)微信支付成功后回调SDK设置
+当微信支付成功之后，返回到App，需要通过WXApi通知SDK.代码如下：
+![wemart_ios-sdk8](/static/wemart_ios-sdk8.png)
+
+### (7)赋值商城店铺url入口
 将按照文档要求配置好的，商城入口url赋值给Demo中wemartVc的**shopUrl**（**注意必填**），将跳转微猫商城的事件写在App工程想要实现的事件中，目标控制器即要显示商城的控制器，如若App工程有全局隐藏导航栏的需求，可设置wemartVc的**hidStatus**属性为YES，**WHHidden**可以隐藏主页返回按钮如下图：
 
 ![wemart_ios_sdk6](/static/wemart_ios_sdk6.png)
 
 
-### (6)**注意事项**
+### (8)**注意事项**
 1)若使用支付宝原生支付，需在**AppDelegate.m**中参照Demo，实现以下两个方法（配合支付宝客户端回调）
 
 ```objc

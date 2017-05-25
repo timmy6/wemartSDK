@@ -17,4 +17,6 @@
 // YES隐藏返回按钮  NO显示返回按钮
 @property (nonatomic, assign) BOOL WMHidden;
 
+@property(nonatomic, copy) UIColor *navigationBarBgColor;
+
 @end

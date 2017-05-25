@@ -2,15 +2,15 @@
 //  ViewController.h
 //  WemartDemo
 //
-//  Created by 冯文秀 on 16/7/5.
-//  Copyright © 2016年 冯文秀. All rights reserved.
+//  Created by liuqiming on 17/5/5.
+//  Copyright © 2016年 liuqiming. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import <WemartSDK/WemartViewController.h>
 
 @interface ViewController : UIViewController
-@property (nonatomic, copy) NSString *appScheme;
-@property (nonatomic, copy) NSString *wechatAppId;
+
+@property (nonatomic, strong) WemartViewController *wemartVc;
 
 @end
-

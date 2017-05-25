@@ -1,6 +1,0 @@
-framework module WemartSDK {
-  umbrella header "WemartSDK.h"
-
-  export *
-  module * { export * }
-}
